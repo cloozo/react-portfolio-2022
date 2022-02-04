@@ -2,7 +2,7 @@ import React from "react";
 import { capitalizeFirstLetter } from "../../utils/helpers";
 
 function Nav() {
-  const categories = [
+  /* const categories = [
     {
       name: "commercial",
       description:
@@ -14,7 +14,7 @@ function Nav() {
       name: "landscape",
       description: "Fields, farmhouses, waterfalls, and the beauty of nature",
     },
-  ];
+  ]; */
 
   const handleClick = () => {
     console.log("click handled");
@@ -28,7 +28,7 @@ function Nav() {
             {" "}
             📸
           </span>{" "}
-          Oh Snap!
+          JONACIN PIERRE-LOUIS PORTFOLIO!
         </a>
       </h2>
       <nav>
@@ -38,10 +38,24 @@ function Nav() {
               About me
             </a>
           </li>
-          <li className={"mx-2"}>
-            <span onClick={() => handleClick()}>Contact</span>
+
+          <li className="mx-2">
+            <a href="#portfolio" onClick={() => handleClick()}>
+              Porfolio
+            </a>
           </li>
-          {categories.map((category) => (
+          <li className="mx-2">
+            <a href="#resume" onClick={() => handleClick()}>
+              Resume
+            </a>
+          </li>
+          <li className="mx-2">
+            <a href="#contact" onClick={() => handleClick()}>
+              Contact2
+            </a>
+          </li>
+
+          {/* {categories.map((category) => (
             <li className="mx-1" key={category.name}>
               <span
                 onClick={() => {
@@ -51,7 +65,7 @@ function Nav() {
                 {capitalizeFirstLetter(category.name)}
               </span>
             </li>
-          ))}
+          ))} */}
         </ul>
       </nav>
     </header>
