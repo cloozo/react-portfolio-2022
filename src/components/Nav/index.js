@@ -1,5 +1,5 @@
 import React from "react";
-// import { capitalizeFirstLetter } from "../../utils/helpers";
+import { capitalizeFirstLetter } from "../../utils/helpers";
 
 function Nav() {
   /* const categories = [
@@ -16,15 +16,14 @@ function Nav() {
     },
   ]; */
 
-  const handleClick = (item) => {
-    console.log(item);
-    return item;
+  const handleClick = () => {
+    console.log("click handled");
   };
 
   return (
-    <header className="flex-row px-1">
+    <header data-testid="header" className="flex-row px-1">
       <h2>
-        <a data-testid="link" href="/">
+        <a href="/">
           <span role="img" aria-label="camera">
             {" "}
             📸
@@ -35,41 +34,23 @@ function Nav() {
       <nav>
         <ul className="flex-row">
           <li className="mx-2">
-            <a data-testid="about" href="#about" onClick={() => handleClick()}>
+            <a href="#about" onClick={() => handleClick()}>
               About me
             </a>
           </li>
 
           <li className="mx-2">
-            <a
-              data-testid="about"
-              href="#portfolio"
-              onClick={() => handleClick()}
-            >
+            <a href="#portfolio" onClick={() => handleClick()}>
               Porfolio
             </a>
           </li>
           <li className="mx-2">
-            <a
-              data-testid="about"
-              href="#portfolio"
-              onClick={() => handleClick()}
-            >
-              Gallery
-            </a>
-          </li>
-
-          <li className="mx-2">
-            <a data-testid="about" href="#resume" onClick={() => handleClick()}>
+            <a href="#resume" onClick={() => handleClick()}>
               Resume
             </a>
           </li>
           <li className="mx-2">
-            <a
-              data-testid="about"
-              href="#contact"
-              onClick={() => handleClick()}
-            >
+            <a href="#contact" onClick={() => handleClick()}>
               Contact
             </a>
           </li>

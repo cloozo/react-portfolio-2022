@@ -1,5 +1,5 @@
 import React from "react";
-import coverImage from "../../Assets/portfolio.jpeg";
+import coverImage from "../../assets/cover/portfolio.jpeg";
 function Portfolio() {
   return (
     <section className="my-5">
