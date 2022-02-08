@@ -11,6 +11,20 @@ function App() {
     //   description:
     //     "Photos of grocery stores, food trucks, and other commercial projects",
     // },
+    {
+      name: "about me",
+      description: (
+        <div className="my-2">
+          <h1> I am Jonacin</h1>
+          <p>
+            I am Jonacin and I am web developer based on Miami, FL. In my spare
+            time, I write code because I enjoy it a lot. My most recent project
+            is one that I built for a start-up company. You can find me on
+            LinkedIn , Twitter, Facebook , and Instagram.
+          </p>
+        </div>
+      ),
+    },
     { name: "portraits", description: "Portraits of people in my life" },
     {
       name: "resume",
@@ -33,6 +47,7 @@ function App() {
         </div>
       ),
     },
+
     // { name: 'landscape', description: 'Fields, farmhouses, waterfalls, and the beauty of nature' },
   ]);
 
