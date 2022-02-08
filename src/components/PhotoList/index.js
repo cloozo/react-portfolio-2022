@@ -6,36 +6,36 @@ const PhotoList = ({ category }) => {
   const [currentPhoto, setCurrentPhoto] = useState();
 
   const [photos] = useState([
-    // {
-    //   name: "Grocery aisle",
-    //   category: "commercial",
-    //   description:
-    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
-    // },
-    // {
-    //   name: "Grocery booth",
-    //   category: "commercial",
-    //   description:
-    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
-    // },
-    // {
-    //   name: "Building exterior",
-    //   category: "commercial",
-    //   description:
-    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
-    // },
-    // {
-    //   name: "Restaurant table",
-    //   category: "commercial",
-    //   description:
-    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
-    // },
-    // {
-    //   name: "Cafe interior",
-    //   category: "commercial",
-    //   description:
-    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
-    // },
+    {
+      name: "Grocery aisle",
+      category: "commercial",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
+    },
+    {
+      name: "Grocery booth",
+      category: "commercial",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
+    },
+    {
+      name: "Building exterior",
+      category: "commercial",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
+    },
+    {
+      name: "Restaurant table",
+      category: "commercial",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
+    },
+    {
+      name: "Cafe interior",
+      category: "commercial",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
+    },
     {
       name: "Cat green eyes",
       category: "portraits",
@@ -60,36 +60,36 @@ const PhotoList = ({ category }) => {
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
     },
-    {
-      name: "Pancakes",
-      category: "food",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
-    },
-    {
-      name: "Burrito",
-      category: "food",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
-    },
-    {
-      name: "Scallop pasta",
-      category: "food",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
-    },
-    {
-      name: "Burger",
-      category: "food",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
-    },
-    {
-      name: "Fruit bowl",
-      category: "food",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
-    },
+    // {
+    //   name: "Resume1",
+    //   category: "food1",
+    //   description:
+    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
+    // },
+    // {
+    //   name: "Resume2",
+    //   category: "food1",
+    //   description:
+    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
+    // },
+    // {
+    //   name: "Resume3",
+    //   category: "food1",
+    //   description:
+    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
+    // },
+    // {
+    //   name: "Resume4",
+    //   category: "food1",
+    //   description:
+    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
+    // },
+    // {
+    //   name: "Resume1",
+    //   category: "food1",
+    //   description:
+    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
+    // },
     {
       name: "Green river",
       category: "landscape",
@@ -137,7 +137,7 @@ const PhotoList = ({ category }) => {
       <div className="flex-row">
         {currentPhotos.map((image, i) => (
           <img
-            src={require(`../../assets/small/${category}/${i}.png`).default}
+            src={require(`../../assets/small/${category}/${i}.jpg`).default}
             alt={image.name}
             className="img-thumbnail mx-1"
             onClick={() => toggleModal(image, i)}
