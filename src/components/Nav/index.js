@@ -22,7 +22,7 @@ function Nav(props) {
             {" "}
             📸
           </span>{" "}
-          Jonacin!
+          <h2>JONACIN PIERRE-LOUIS!</h2>
         </a>
       </h2>
       <nav>
@@ -32,9 +32,7 @@ function Nav(props) {
               About me
             </a>
           </li> */}
-          <li className={`mx-2 ${contactSelected && "navActive"}`}>
-            <span onClick={() => setContactSelected(true)}>Contact</span>
-          </li>
+
           {categories.map((category) => (
             <li
               className={`mx-1 ${
@@ -54,6 +52,9 @@ function Nav(props) {
               </span>
             </li>
           ))}
+          <li className={`mx-2 ${contactSelected && "navActive"}`}>
+            <span onClick={() => setContactSelected(true)}>Contact</span>
+          </li>
         </ul>
       </nav>
     </header>
