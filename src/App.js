@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Nav from "./components/Nav";
-// import About from "./components/About";
+import About from "./components/About";
 import coverImage from "../src/assets/cover/jon1.jpg";
 import Gallery from "./components/Gallery";
 import ContactForm from "./components/Contact";
@@ -17,35 +17,39 @@ function App() {
       description: (
         <div className="my-2">
           <h1>
-            <u> Just a few words about me </u>
-            <br></br>
-            <br></br>
+            {/* <hr></hr> */}
+            <h3>Just a few words about me </h3>
           </h1>
           <p>
-            I am a web developer based on Miami, FL. In my spare time, I write
-            code because I enjoy it a lot. My most recent project is one that I
-            built for a start-up company using various in demand tehnologies
-            like React.
+            <br></br>I am a web developer based in Miami, FL; I am a current
+            University of Miami Coding Booting student. In my spare time, I
+            write code because I enjoy it a lot. My most recent project is one
+            that I built for a start-up company using various in demand
+            tehnologies like React.
           </p>
           <p>
-            I am very proficient and familiar with HTML, CSS, Javascript,
-            JQuery, MongoDb, Mongoose, Mysql, NoSql, React and more. I am a very
-            creative web developer that can take any design from simple concept
-            to an actual full fledged-webpage. My skills include but are not
-            limited to coding websites and web applications by building and
-            optimizing secure web sites for evolving business need.
+            I am quite proficient with HTML, CSS, Javascript, JQuery, MongoDb,
+            Mongoose, Mysql, NoSql, React and more. I am a very creative web
+            developer that can take any design from simple concept to an actual
+            full fledged-webpage. My skills include but are not limited to
+            coding websites and web applications by building and optimizing
+            secure web sites for evolving business need.
           </p>
         </div>
       ),
     },
-    { name: "portraits", description: "Portraits of people in my life" },
+
+    { name: "portfolio", description: "Here are samples of my work" },
+
     {
       name: "resume",
       description: (
         <div className="my-2">
+          {/* <hr></hr> */}
           <p>
             Jonacin Pierre-Louis Miami, FL, 33161 (743) 500-0000
-            jumkemail@yahoo.com{" "}
+            <hr></hr>
+            youcansendmejunkmail@ygmail.com{" "}
           </p>
           EDUCATIONAL QUALIFICATION
           <p>
@@ -110,7 +114,7 @@ function App() {
         {!contactSelected ? (
           <>
             <Gallery currentCategory={currentCategory}></Gallery>
-            {/* <About></About> */}
+            <About></About>
             <section className="my-5">
               <img
                 src={coverImage}

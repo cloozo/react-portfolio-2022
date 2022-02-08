@@ -37,28 +37,35 @@ const PhotoList = ({ category }) => {
     //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
     // },
     {
-      name: "Cat green eyes",
-      category: "portraits",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
+      name: "Chef Bartender",
+      category: "portfolio",
+
+      description: "Chef Bartender",
     },
     {
-      name: "Green parrot",
-      category: "portraits",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
+      name: "Coding Quizz Challenge",
+      category: "portfolio",
+      description: "Coding Quizz Challenge",
     },
     {
-      name: "Yellow macaw",
-      category: "portraits",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
+      name: "Work Day Scheduler",
+      category: "portfolio",
+      description: "Work Day Scheduler",
     },
     {
-      name: "Pug smile",
-      category: "portraits",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
+      name: "Code Refactor",
+      category: "portfolio",
+      description: "Code Refacto",
+    },
+    {
+      name: "Password Generator",
+      category: "portfolio",
+      description: "Password Generator",
+    },
+    {
+      name: "Weather Dashboard",
+      category: "portfolio",
+      description: "Weather Dashboard",
     },
     // {
     //   name: "Resume1",
@@ -137,7 +144,7 @@ const PhotoList = ({ category }) => {
       <div className="flex-row">
         {currentPhotos.map((image, i) => (
           <img
-            src={require(`../../assets/small/${category}/${i}.jpg`).default}
+            src={require(`../../assets/small/${category}/${i}.png`).default}
             alt={image.name}
             className="img-thumbnail mx-1"
             onClick={() => toggleModal(image, i)}

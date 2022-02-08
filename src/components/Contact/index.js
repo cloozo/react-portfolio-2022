@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { validateEmail } from "../../utils/helpers";
 
 function ContactForm() {
+  // <hr></hr>;
   const [formState, setFormState] = useState({
     name: "",
     email: "",
@@ -43,6 +44,7 @@ function ContactForm() {
   return (
     <section>
       <h1 data-testid="h1tag">Contact me: </h1>
+      {/* <hr></hr> */}
       <form id="contact-form" onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Name:</label>
