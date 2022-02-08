@@ -14,19 +14,19 @@ function About() {
         <hr></hr>
         <h1>Social Media</h1>
         <p>
-          <a data-testod="link" href="./">
+          <a data-testid="link" href="./">
             LinkedIn{" "}
           </a>
           |{" "}
-          <a data-testod="link" href="./">
+          <a data-testid="link" href="./">
             Instagram{" "}
           </a>{" "}
           |{" "}
-          <a data-testod="link" href="./">
+          <a data-testid="link" href="./">
             Facebook{" "}
           </a>{" "}
           |{" "}
-          <a data-testod="link" href="./">
+          <a data-testid="link" href="./">
             Twitter{" "}
           </a>
         </p>

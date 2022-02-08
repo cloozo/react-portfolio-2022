@@ -141,7 +141,52 @@ const PhotoList = ({ category }) => {
       {isModalOpen && (
         <Modal onClose={toggleModal} currentPhoto={currentPhoto} />
       )}
+
       <div className="flex-row">
+        <div className="my-2">
+          <hr></hr>
+          Portfolio links:
+          <p>
+            <a
+              data-testid="link"
+              href="https://alysnyder.github.io/group-1-project/"
+            >
+              Chef Bartender |
+            </a>
+            <a
+              data-testid="link"
+              href="https://user-images.githubusercontent.com/84163696/140164832-ef11db62-7afa-4c08-a42a-6d3da20df354.png"
+            >
+              Weather Dashboard |
+            </a>
+            <a
+              data-testid="link"
+              href="https://cloozo.github.io/quiz-challenge-javascript-page/"
+            >
+              Coding Quizz Challenge |
+            </a>
+
+            <a
+              data-testid="link"
+              href="https://cloozo.github.io/calendar-challenge-javascript-app/"
+            >
+              WorkDay Scheduler |
+            </a>
+
+            <a
+              data-testid="link"
+              href="https://cloozo.github.io/password-generator-web-app"
+            >
+              Password Generator |
+            </a>
+            <a
+              data-testid="link"
+              href="https://cloozo.github.io/code-refactor-horiseon/"
+            >
+              Code Refactor
+            </a>
+          </p>
+        </div>
         {currentPhotos.map((image, i) => (
           <img
             src={require(`../../assets/small/${category}/${i}.png`).default}
