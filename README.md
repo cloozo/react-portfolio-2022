@@ -15,7 +15,7 @@ SO THAT I can assess whether they're a good candidate for an open position
 ## React Porfolio: 
 Link to my repo-> (https://github.com/cloozo/react-portfolio-2022)
 ## Direct Link to Deployment App: 
-Link to w deployed App-> ![coming]
+Link to  deployed App-> ![http://localhost:3000/photo-port]
 
 
 ---
