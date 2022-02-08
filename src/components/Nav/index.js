@@ -1,71 +1,64 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { capitalizeFirstLetter } from "../../utils/helpers";
 
-function Nav() {
-  /* const categories = [
-    {
-      name: "commercial",
-      description:
-        "Photos of grocery stores, food trucks, and other commercial projects",
-    },
-    { name: "portraits", description: "Portraits of people in my life" },
-    { name: "food", description: "Delicious delicacies" },
-    {
-      name: "landscape",
-      description: "Fields, farmhouses, waterfalls, and the beauty of nature",
-    },
-  ]; */
+function Nav(props) {
+  const {
+    categories = [],
+    setCurrentCategory,
+    contactSelected,
+    currentCategory,
+    setContactSelected,
+  } = props;
 
-  const handleClick = () => {
-    console.log("click handled");
-  };
+  useEffect(() => {
+    document.title = capitalizeFirstLetter(currentCategory.name);
+  }, [currentCategory]);
 
   return (
-    <header data-testid="header" className="flex-row px-1">
+    <header className="flex-row px-1">
       <h2>
-        <a href="/">
+        <a data-testid="link" href="/">
           <span role="img" aria-label="camera">
             {" "}
             📸
           </span>{" "}
-          JONACIN!
+          Oh Snap!
         </a>
       </h2>
       <nav>
         <ul className="flex-row">
           <li className="mx-2">
-            <a href="#about" onClick={() => handleClick()}>
+            <a
+              data-testid="about"
+              href="about"
+              onClick={() => setContactSelected(false)}
+            >
+              {/* <a data-testid="about" href="#about" onClick={() => setContactSelected(false)}> */}
               About me
             </a>
           </li>
-
-          <li className="mx-2">
-            <a href="#portfolio" onClick={() => handleClick()}>
-              Porfolio
-            </a>
+          <li className={`mx-2 ${contactSelected && "navActive"}`}>
+            <span onClick={() => setContactSelected(true)}>Contact</span>
           </li>
-          <li className="mx-2">
-            <a href="#resume" onClick={() => handleClick()}>
-              Resume
-            </a>
-          </li>
-          <li className="mx-2">
-            <a href="#contact" onClick={() => handleClick()}>
-              Contact
-            </a>
-          </li>
-
-          {/* {categories.map((category) => (
-            <li className="mx-1" key={category.name}>
+          {categories.map((category) => (
+            <li
+              className={`mx-1 ${
+                currentCategory.name === category.name &&
+                !contactSelected &&
+                "navActive"
+              }`}
+              key={category.name}
+            >
               <span
                 onClick={() => {
-                  handleClick();
+                  setCurrentCategory(category);
+                  setContactSelected(false);
                 }}
               >
                 {capitalizeFirstLetter(category.name)}
               </span>
             </li>
-          ))} */}
+          ))}
         </ul>
       </nav>
     </header>
