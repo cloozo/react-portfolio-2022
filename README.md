@@ -16,7 +16,8 @@ SO THAT I can assess whether they're a good candidate for an open position
 Link to my repo-> (https://github.com/cloozo/react-portfolio-2022)
 ## Direct Link to Deployment App: 
 Link to deployed App can be found here-> (https://fast-plains-24526.herokuapp.com)
-![screenshot](https://https://github.com/cloozo/react-portfolio-2022)
+
+![https://github.com/cloozo/react-portfolio-2022](https://user-images.githubusercontent.com/84163696/153095489-a5b4669e-df79-477c-addd-72616b49b09c.png)
 
 ---
 # Technologies Used
