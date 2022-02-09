@@ -53,32 +53,31 @@ function App() {
           </p>
           EDUCATIONAL QUALIFICATION
           <p>
-            University of Miami Coding Bootcamp, Full Stack Web Developer
-            Florida International University, Miami, Florida August 2021- Feb
-            2022
+            Full Stack Web Developer, University of Miami Coding Bootcamp Miami,
+            Florida August 2021- Feb 2022
           </p>
           <p>
             Master’s in Business Administration Florida International
             University, Miami, Florida August 2009-March 2011
           </p>
           <p>
-            Bachelor's Degree in Studio Art Graphic/Web Design Florida State
+            Bachelor's Degree in Studio Art Graphic/Web Design, Florida State
             University, Tallahassee, Florida July 2003{" "}
           </p>
           PROFESSIONAL EXPERIENCE
           <p>
-            America’s GOP 2005 - 2010 Free Lance web design • In charge of
-            creating and maintaining the website using ColdFusion, Adobe
-            Photoshop, Fireworks, and Dreamweaver, for the company and to make
-            sure that the website was running with no technical difficulties and
-            that all the codes were running flawless. • Developed graphics that
+            America’s GOP 2005 - 2010 Free Lance web design • Charged to create
+            and maintained the website using ColdFusion, Adobe Photoshop,
+            Fireworks, and Dreamweaver, for the company and to make sure that
+            the website was running with no technical difficulties and that all
+            the codes were running flawless. • Developed graphics that
             effectively communicate the ideas being promoted by the company’s
             Web site.
           </p>
           <p>
-            Econocaribe 2003 – 2005 RPG Programmer • Tested and debugged
-            programs as well as prepared run sheets for routine programs. Part
-            of my daily responsibilities was to do coding from flow charts and
+            Econocaribe 2003 – 2005 RPG Programmer Tested and debugged programs
+            as well as prepared run sheets for routine programs. Part of my
+            daily responsibilities was to do coding from flow charts and
             assisted in determining the causes of computer or program
             malfunctions and verified program logic by preparing tests data for
             trial runs. • Provided status reports that give a detailed
@@ -87,8 +86,9 @@ function App() {
           </p>
           <p>CERTIFICATION </p>
           Completed the ASNA “UP AND RUNNING WITH AVR for .NET” Seminar, July
-          2004 Full Stack Web Development, Miami, FL - University Of Miami
-          February 2022
+          2004 Barry University 
+          Full Stack Web Development, Miami, FL -
+          University Of Miami February 2022
         </div>
       ),
     },
