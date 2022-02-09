@@ -57,7 +57,7 @@ function App() {
             Florida August 2021- Feb 2022
           </p>
           <p>
-            Master’s in Business Administration Florida International
+            Master’s in Business Administration, Florida International
             University, Miami, Florida August 2009-March 2011
           </p>
           <p>
@@ -86,8 +86,7 @@ function App() {
           </p>
           <p>CERTIFICATION </p>
           Completed the ASNA “UP AND RUNNING WITH AVR for .NET” Seminar, July
-          2004 Barry University 
-          Full Stack Web Development, Miami, FL -
+          2004 Barry University Full Stack Web Development, Miami, FL -
           University Of Miami February 2022
         </div>
       ),
